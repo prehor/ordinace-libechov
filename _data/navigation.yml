@@ -1,0 +1,11 @@
+main:
+  - title: Aktuality
+    url: /posts/
+  - title: Služby
+    url: /sluzby/
+  - title: Ordinační hodiny
+    url: /ordinacni-hodiny/
+  - title: Kontakty
+    url: /kontakty/
+  # - title: Privacy
+  #   url: /privacy-policy/

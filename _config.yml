@@ -1,0 +1,134 @@
+# https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml
+
+# Theme settings
+remote_theme: mmistakes/minimal-mistakes@4.19.1
+minimal_mistakes_skin: # air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
+
+# Site settings
+title: Ordinace Liběchov
+title_separator: "|"
+subtitle: # site tagline that appears below site title in masthead
+name: MUDr. Lucie Žáčková
+# description: >- # this means to ignore newlines
+#   Write an awesome description for your new site here. You can edit this
+#   line in _config.yml. It will appear in your document head meta (for
+#   Google search results) and in your feed.xml site description.
+teaser: # path of fallback teaser image
+logo: /assets/images/logo.png # path of logo image to display in the masthead
+breadcrumbs: false
+search: true
+search_full_content: true
+# google_site_verification: # SEO Related
+
+# Social sharing
+
+# Analytics
+# analytics:
+#   provider: "google-gtag"
+#   google:
+#     tracking_id: "UA-316217-4"
+#     anonymize_ip: true
+# head_scripts:
+#   - https://cmp.osano.com/AzZcj2RuRfyUG1SCq/3dc429a1-adaa-409f-990c-2ff5842cc5dd/osano.js
+
+# Site author
+author:
+  name: <br><br>MUDr. Lucie Žáčková
+  avatar: /assets/images/avatar.png
+  bio: "&nbsp;"
+  links:
+    - label: Liběchov, CZ
+      icon: fas fa-fw fa-map-marker-alt
+      url: /kontakty/
+    - label: "08:00 - 12:00"
+      icon: fas fa-fw fa-clock
+      url: /ordinacni-hodiny/
+    - label: zackova@zacek.cz
+      icon: fas fa-fw fa-envelope
+      url: mailto:zackova@zacek.cz
+    - label: 315 697 138
+      icon: fas fa-fw fa-phone
+      url: tel:315697138
+  # github:
+  # linkedin:
+  # twitter:
+
+# Site footer
+
+# Reading files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - .gitignore
+  - docker-compose.yml
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - Makefile
+  - README.md
+encoding: utf-8
+keep_files:
+  - .git
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+# Sass/SCSS
+
+# Outputting
+paginate_path: /page:num/
+paginate: 5 # amount of posts to show
+timezone: Europe/Prague
+
+# Plugins
+plugins:
+  - github-pages
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jemoji
+
+# Archives
+# category_archive:
+#   type: liquid
+#   path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: _pages
+      type: pages
+    values:
+      layout: single
+      author_profile: true
